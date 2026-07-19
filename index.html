@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Language Learning App</h1>
+
+    <!-- Language Selection -->
+    <div class="language-select">
+      <label for="language">Choose a language:</label>
+      <select id="language">
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+      </select>
+      <button id="start-lesson">Start Lesson</button>
+    </div>
+
+    <!-- Flashcard Section -->
+    <div class="lesson-section hidden">
+      <h2>Daily Lesson</h2>
+      <div id="flashcard">
+        <p id="word">Word</p>
+        <p id="translation">Translation</p>
+        <p id="pronunciation">Pronunciation</p>
+      </div>
+      <button id="new-word">Next Word</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-section hidden">
+      <h2>Quiz</h2>
+      <p id="quiz-question">Question will appear here</p>
+      <div id="quiz-options"></div>
+      <p id="quiz-feedback"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
